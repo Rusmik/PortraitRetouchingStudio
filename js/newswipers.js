@@ -2,20 +2,17 @@ const swiperport = new Swiper('.portfolio__block', {
 	// Optional parameters
 	direction: 'horizontal',
 	loop: true,
-
 	// If we need pagination
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
 		dynamicBullets: true,
 	},
-
 	// Navigation arrows
 	navigation: {
 		nextEl: '.swiper-button-next',
 		prevEl: '.swiper-button-prev',
 	},
-
 	// And if we need scrollbar
 	//autoHeight: true,
 	// watchOverflow: true,
@@ -32,13 +29,10 @@ const swiperport = new Swiper('.portfolio__block', {
 	effect: 'slide',
 });
 
-
-
 const swiperrev = new Swiper('.review__swiper', {
 	// Optional parameters
 	direction: 'horizontal',
 	loop: true,
-
 	// If we need pagination
 	pagination: {
 		el: '.swiper-pagination',
@@ -46,7 +40,6 @@ const swiperrev = new Swiper('.review__swiper', {
 		clickable: true,
 		dynamicBullets: true,
 	},
-
 	// Navigation arrows
 	navigation: {
 		nextEl: '.swiper-button-next',
@@ -93,7 +86,10 @@ const swiperworkflow = new Swiper('.workflow__swiper', {
 	// If we need pagination
 	pagination: {
 		el: '.swiper-pagination',
-		type: 'progressbar',
+		type: 'fraction',
+		renderFraction: function (currentClass, totalClass) {
+			return "Step <span class='" + currentClass + "'></span> of <span class='" + totalClass + "'></span>";
+		},
 	},
 	grabCursor: true,
 	// Navigation arrows
@@ -105,8 +101,4 @@ const swiperworkflow = new Swiper('.workflow__swiper', {
 		delay: 5000,
 		disableOnInteraction: false,
 	},
-	// And if we need scrollbar
-	// scrollbar: {
-	//   el: '.swiper-scrollbar',
-	// },
 });

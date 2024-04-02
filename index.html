@@ -7,13 +7,13 @@
 	<link rel="stylesheet" href="css/swiper.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link type="image/png" sizes="150x150" rel="icon" href="img/favicon/Portrait Retouching Studio favicon.png">
-
 	<title>Portrait Retouching Studio</title>
 	<script src="js/jquery.js"></script>
 </head>
 
 <body>
 	<div class="wrapper">
+		<!--! HEADER -->
 		<header id="header" class="header">
 			<div class="header__container">
 				<a href="#" class="header__logo">
@@ -50,41 +50,52 @@
 				</nav>
 			</div>
 		</header>
+		<!--! HERO -->
 		<main class="page">
 			<section id="hero" class="page__hero hero">
 				<div class="hero__container">
-					<div class="hero__content content-hero">
-						<h1 class="content__title">We Offer Monument Retouching and <a href="#services">More</a>
-						</h1>
-						<div class="content-hero__text">
-							<p class="">
-								Our studio specializes in monument retouching services. While our primary focus is on preserving
-								and enhancing the beauty of monuments, we also offer a range of additional services. These
-								include professional photo retouching, image processing, quality enhancement, and size
-								adjustment, among others. Our dedication to excellence ensures that every project, whether it's
-								monument restoration or general photo editing, receives the utmost attention to detail and
-								care.✨
-							</p>
+					<div class="hero__content content-hero _anim-items">
+						<div class="title__content _anim-items">
+							<h1 class="content__title">We Offer Monument Retouching and <a href="#services">More</a>
+							</h1>
 						</div>
-						<a href="#services" class="content-hero__button">Our Services →</a>
+						<div>
+							<div class="content-hero__text _anim-items">
+								<p class="content__text">
+									Our studio specializes in monument retouching services. While our primary focus is on
+									preserving
+									and enhancing the beauty of monuments, we also offer a range of additional services. These
+									include professional photo retouching, image processing, quality enhancement, and size
+									adjustment, among others. Our dedication to excellence ensures that every project, whether
+									it's
+									monument restoration or general photo editing, receives the utmost attention to detail and
+									care.✨
+								</p>
+							</div>
+						</div>
+						<div class="hero__button _anim-items">
+							<a href="#services" style="--clr:#1e9bff" class="content-hero__button"><span>Services
+									→</span><i></i></a>
+						</div>
 					</div>
 					<div class="hero__images images-hero">
-						<a href="#engraving" class="images-hero__item images-hero__item--01">
+						<a href="#engraving" class="images-hero__item images-hero__item--01 _anim-items">
 							<img src="img/hero/1.jpg" class="images-hero__picture" alt="Image">
 						</a>
-						<a href="#restoration" class="images-hero__item images-hero__item--02">
+						<a href="#restoration" class="images-hero__item images-hero__item--02 _anim-items">
 							<img src="img/hero/2.jpg" class="images-hero__picture" alt="Image">
 						</a>
-						<a href="#memorial" class="images-hero__item images-hero__item--03">
+						<a href="#memorial" class="images-hero__item images-hero__item--03 _anim-items">
 							<img src="img/hero/3.jpg" class="images-hero__picture" alt="Image">
 						</a>
-						<a href="#restoration" class="images-hero__item images-hero__item--04">
+						<a href="#restoration" class="images-hero__item images-hero__item--04 _anim-items">
 							<img src="img/hero/4.jpg" class="images-hero__picture" alt="Image">
 						</a>
 					</div>
 				</div>
 			</section>
 			<hr />
+			<!--! WE ARE -->
 			<section id="aboutus" class="page__aboutus aboutus">
 				<div class="aboutus__container">
 					<div class="aboutus__header-block header-block header-block--margin">
@@ -92,7 +103,7 @@
 						<h2 class="header-block__title">The team of professionals, who:</h2>
 					</div>
 					<div class="aboutus__items">
-						<div class="aboutus__item">
+						<div class="aboutus__item _anim-items">
 							<div class="aboutus__icon">
 								<img src="img/aboutus/expertise.png" alt="Expertise">
 							</div>
@@ -101,7 +112,7 @@
 								<p>have been retouching professionally for 10 years, successfully completing every order</p>
 							</div>
 						</div>
-						<div class="aboutus__item">
+						<div class="aboutus__item _anim-items">
 							<div class="aboutus__icon">
 								<img src="img/aboutus/world-wide.png" alt="World-wide">
 							</div>
@@ -110,16 +121,17 @@
 								<p>have regular customers in 10 countries and have worked with clients from 14 countries</p>
 							</div>
 						</div>
-						<div class="aboutus__item">
+						<div class="aboutus__item _anim-items">
 							<div class="aboutus__icon">
 								<img src="img/aboutus/clients.png" alt="Clients">
 							</div>
 							<h4 class="aboutus__title">Clients</h4>
 							<div class="aboutus__text">
-								<p>have 20 regular clients with whom we have been working for over 3 years</p>
+								<p>have established relationships with 20 loyal clients, with whom we have
+									been working for over 3 years</p>
 							</div>
 						</div>
-						<div class="aboutus__item">
+						<div class="aboutus__item _anim-items">
 							<div class="aboutus__icon">
 								<img src="img/aboutus/done.png" alt="Done">
 							</div>
@@ -132,6 +144,7 @@
 				</div>
 			</section>
 			<hr />
+			<!--! SERVICES -->
 			<section id="services" class="page__services services">
 				<div class="services__container">
 					<div class="services__header-block header-block--margin">
@@ -168,7 +181,16 @@
 											<li><b>Contact:</b> Reach out via email, social networks, or our <a href="#writeus"
 													class="form__link">website form</a>.</li>
 											<li><b>Submit Images:</b> Provide the portraits for retouching.</li>
-											<li><b>Provide Details:</b> Share all necessary instructions for precise results.</li>
+											<li><b>Provide Details:</b> Share all necessary instructions for precise results.
+												<ul>
+													<li>Comments (Wishes or Instructions for the Photo):
+														Provide any specific preferences or instructions for the photo editing
+														process.</li>
+													<li>Size:
+														Specify the desired height and width of the photo in inches or centimeters.
+													</li>
+												</ul>
+											</li>
 											<li><b>Retouching:</b> We'll enhance and clean up the images, ensuring a natural look.
 											</li>
 											<li><b>Review & Approval:</b> You'll receive a soft proof for review. Revisions are
@@ -221,7 +243,16 @@
 													class="form__link">website form</a>.</li>
 											<li><b>Submit Images:</b> Provide the portraits for retouching (black-and-white or
 												colored pictures).</li>
-											<li><b>Provide Details:</b> Share all necessary instructions for precise results.</li>
+											<li><b>Provide Details:</b> Share all necessary instructions for precise results.
+												<ul>
+													<li>Comments (Wishes or Instructions for the Photo):
+														Provide any specific preferences or instructions for the photo editing
+														process.</li>
+													<li>Size:
+														Specify the desired height and width of the photo in inches or centimeters.
+													</li>
+												</ul>
+											</li>
 											<li><b>Retouching:</b> We'll enhance and clean up the images, ensuring a natural look.
 											</li>
 											<li><b>Review & Approval:</b> You'll receive a soft proof for review. Revisions are
@@ -270,7 +301,16 @@
 											<li><b>Contact:</b> Reach out via email, social networks, or our <a href="#writeus"
 													class="form__link">website form</a>.</li>
 											<li><b>Submit Images:</b> Provide the portraits for retouching.</li>
-											<li><b>Provide Details:</b> Share all necessary instructions for precise results.</li>
+											<li><b>Provide Details:</b> Share all necessary instructions for precise results.
+												<ul>
+													<li>Comments (Wishes or Instructions for the Photo):
+														Provide any specific preferences or instructions for the photo editing
+														process.</li>
+													<li>Size:
+														Specify the desired height and width of the photo in inches or centimeters.
+													</li>
+												</ul>
+											</li>
 											<li><b>Retouching:</b> We'll enhance and clean up the images, ensuring a natural look.
 											</li>
 											<li><b>Review & Approval:</b> You'll receive a soft proof for review. Revisions are
@@ -320,7 +360,16 @@
 											<li><b>Contact:</b> Reach out via email, social networks, or our <a href="#writeus"
 													class="form__link">website form</a>.</li>
 											<li><b>Submit Images:</b> Provide the portraits for retouching.</li>
-											<li><b>Provide Details:</b> Share all necessary instructions for precise results.</li>
+											<li><b>Provide Details:</b> Share all necessary instructions for precise results.
+												<ul>
+													<li>Comments (Wishes or Instructions for the Photo):
+														Provide any specific preferences or instructions for the photo editing
+														process.</li>
+													<li>Size:
+														Specify the desired height and width of the photo in inches or centimeters.
+													</li>
+												</ul>
+											</li>
 											<li><b>Retouching:</b> We'll enhance and clean up the images, ensuring a natural look.
 											</li>
 											<li><b>Review & Approval:</b> You'll receive a soft proof for review. Revisions are
@@ -371,7 +420,16 @@
 											<li><b>Contact:</b> Reach out via email, social networks, or our <a href="#writeus"
 													class="form__link">website form</a>.</li>
 											<li><b>Submit Images:</b> Provide the portraits for retouching.</li>
-											<li><b>Provide Details:</b> Share all necessary instructions for precise results.</li>
+											<li><b>Provide Details:</b> Share all necessary instructions for precise results.
+												<ul>
+													<li>Comments (Wishes or Instructions for the Photo):
+														Provide any specific preferences or instructions for the photo editing
+														process.</li>
+													<li>Size:
+														Specify the desired height and width of the photo in inches or centimeters.
+													</li>
+												</ul>
+											</li>
 											<li><b>Retouching:</b> We'll enhance and clean up the images, ensuring a natural look.
 											</li>
 											<li><b>Review & Approval:</b> You'll receive a soft proof for review. Revisions are
@@ -396,15 +454,13 @@
 				</div>
 			</section>
 			<hr />
-
-
+			<!--! PORTFOLIO -->
 			<section id="portfolio" class="page__portfolio portfolio">
 				<div class="portfolio__container">
 					<div class="portfolio__header-block header-block header-block--margin">
 						<div class="header-block__label">Portfolio</div>
 						<h2 class="header-block__title">Explore a Selection of Our Work</h2>
 					</div>
-
 					<div class="portfolio__block swiper">
 						<div class="portfolio__wrapper swiper-wrapper">
 							<div class="portfolio__slide swiper-slide">
@@ -477,8 +533,6 @@
 									<img src="img/portfolio/14.jpg" class="swiper__img" alt="Image">
 								</div>
 							</div>
-
-
 						</div>
 						<div class="portfolio swiper-pagination"></div>
 						<div class="portfolio swiper-button-prev"></div>
@@ -487,6 +541,7 @@
 				</div>
 			</section>
 			<hr />
+			<!--! CONTACT -->
 			<section id="socials" class="page__socials socials">
 				<div class="socials__container">
 					<div class="aboutus__header-block header-block header-block--margin">
@@ -494,63 +549,64 @@
 						<h2 class="header-block__title">Us For More Content and Ordering</h2>
 					</div>
 					<div class="socials__items">
-						<div class="socials__item">
-							<a href="#" class="socials__link" target="_blank">
+						<div class="socials__item _anim-items">
+							<a href="https://www.facebook.com/profile.php?id=61558034514661" class="socials__link"
+								target="_blank">
 								<img src="img/social/facebook.png" alt="facebook">
 							</a>
 							<h4 class="socials__title">Facebook</h4>
 						</div>
-						<div class="socials__item">
+						<div class="socials__item _anim-items">
 							<a href="https://www.instagram.com/portraitretouchingstudio" class="socials__link" target="_blank">
 								<img src="img/social/instagram.png" alt="instagram">
 							</a>
 							<h4 class="socials__title">Instagram</h4>
 						</div>
-						<div class="socials__item">
+						<div class="socials__item _anim-items">
 							<a href="mailto:graniteportraitart@gmail.com" class="socials__link" target="_blank">
 								<img src="img/social/mail.png" alt="mail">
 							</a>
 							<h4 class="socials__title">E-mail</h4>
 						</div>
-						<div class="socials__item">
+						<div class="socials__item _anim-items">
 							<a href="https://www.linkedin.com/in/portrait-retouching-studio" class="socials__link"
 								target="_blank">
 								<img src="img/social/linkedin.png" alt="linkedin">
 							</a>
 							<h4 class="socials__title">LinkedIn</h4>
 						</div>
-						<div class="socials__item">
+						<div class="socials__item _anim-items">
 							<a href="https://www.youtube.com/@PortraitRetouchingStudio" class="socials__link" target="_blank">
 								<img src="img/social/youtube.png" alt="youtube">
 							</a>
 							<h4 class="socials__title">Youtube</h4>
 						</div>
-						<div class="socials__item">
+						<div class="socials__item _anim-items">
 							<a href="https://www.tiktok.com/@portraitretouchingstudio" class="socials__link" target="_blank">
 								<img src="img/social/tiktok.png" alt="tiktok">
 							</a>
 							<h4 class="socials__title">TikTok</h4>
 						</div>
-						<div class="socials__item">
-							<a href="https://www.tiktok.com/@portraitretouchingstudio" class="socials__link" target="_blank">
+						<div class="socials__item _anim-items">
+							<a href="https://linktr.ee/portraitretouchingstudio" class="socials__link" target="_blank">
 								<img src="img/social/linktree.png" alt="linktree">
 							</a>
 							<h4 class="socials__title">Linktree</h4>
 						</div>
-						<div class="socials__item">
-							<a href="https://www.tiktok.com/@portraitretouchingstudio" class="socials__link" target="_blank">
+						<div class="socials__item _anim-items">
+							<a href="tg://resolve?domain=PortraitRetouchingStudio" class="socials__link" target="_blank">
 								<img src="img/social/telegram.png" alt="telegram">
 							</a>
 							<h4 class="socials__title">Telegram</h4>
 						</div>
-						<div class="socials__item">
-							<a href="https://www.tiktok.com/@portraitretouchingstudio" class="socials__link" target="_blank">
+						<div class="socials__item _anim-items">
+							<a href="viber://chat?number=+380684383020" class="socials__link" target="_blank">
 								<img src="img/social/viber.png" alt="viber">
 							</a>
 							<h4 class="socials__title">Viber</h4>
 						</div>
-						<div class="socials__item">
-							<a href="https://www.tiktok.com/@portraitretouchingstudio" class="socials__link" target="_blank">
+						<div class="socials__item _anim-items">
+							<a href="https://api.whatsapp.com/send?phone=380684383020" class="socials__link" target="_blank">
 								<img src="img/social/whatsapp.png" alt="whatsapp">
 							</a>
 							<h4 class="socials__title">Whatsapp</h4>
@@ -559,14 +615,13 @@
 				</div>
 			</section>
 			<hr />
-
+			<!--! REVIEWS -->
 			<section id="reviews" class="page__reviews reviews">
 				<div class="reviews__container">
 					<div class="reviews__header-block header-block header-block--margin">
 						<div class="header-block__label">Reviews</div>
 						<h2 class="header-block__title">What Our Customers Are Saying</h2>
 					</div>
-
 					<div class="review__swiper swiper">
 						<div class="swiper-wrapper">
 							<div class="swiper-slide">
@@ -672,15 +727,14 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-pagination"></div>
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
-						<!-- <div class="swiper-scrollbar"></div> -->
+						<div class="review__pagination swiper-pagination"></div>
+						<div class="review__prev swiper-button-prev"></div>
+						<div class="review__next swiper-button-next"></div>
 					</div>
 				</div>
 			</section>
 			<hr />
-			<!-- TODO correct this section to work flow-->
+			<!--! FORKFLOW -->
 			<section id="workflow" class="page__workflow workflow">
 				<div class="workflow__container">
 					<div class="workflow__header-block header-block header-block--margin">
@@ -690,50 +744,150 @@
 					<div class="workflow__swiper swiper">
 						<div class="workflow__wrapper swiper-wrapper">
 							<div class="workflow__item swiper-slide">
-								<div class="workflow__icon">
-									<img src="img/aboutus/expertise.png" alt="Expertise">
-								</div>
-								<h4 class="workflow__title">Contact us</h4>
-								<div class="workflow__text">
-									<p>have been retouching professionally for 8 years successfully compliting every order </p>
-								</div>
-							</div>
-							<div class="workflow__item swiper-slide">
-								<div class="workflow__icon">
-									<img src="img/aboutus/expertise.png" alt="Expertise">
-								</div>
-								<h4 class="workflow__title">Contact us</h4>
-								<div class="workflow__text">
-									<p>have been retouching professionally for 8 years successfully compliting every order </p>
-								</div>
-							</div>
-							<div class="workflow__item swiper-slide">
-								<div class="workflow__icon">
-									<img src="img/aboutus/expertise.png" alt="Expertise">
-								</div>
-								<h4 class="workflow__title">Contact us</h4>
-								<div class="workflow__text">
-									<p>have been retouching professionally for 8 years successfully compliting every order </p>
+								<div class="wf__container">
+									<div>
+										<h4 class="workflow__title">Contact us</h4>
+									</div>
+									<div class="wf__cont">
+										<div class="workflow__icon">
+											<img src="img/workflow/contact.png" alt="Contact">
+										</div>
+										<div class="workflow__info">
+											<p class="workflow__text">Reach out via email, social networks, or our <a
+													href="#writeus">website form.</a>
+												Our <a href="#socials">contact information</a> can be found on our website.</p>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="workflow__item swiper-slide">
-								<div class="workflow__icon">
-									<img src="img/aboutus/expertise.png" alt="Expertise">
+								<div class="wf__container">
+									<div>
+										<h4 class="workflow__title">Submit Images</h4>
+									</div>
+									<div class="wf__cont">
+										<div class="workflow__icon">
+											<img src="img/workflow/submit.png" alt="Submit">
+										</div>
+										<div class="workflow__info">
+											<p class="workflow__text">Please provide the portraits or images you'd like us to
+												retouch. You can upload them through email attachments or via our secure online
+												portal. Ensure the images are of high quality for the best results.</p>
+										</div>
+									</div>
 								</div>
-								<h4 class="workflow__title">Contact us</h4>
-								<div class="workflow__text">
-									<p>have been retouching professionally for 8 years successfully compliting every order </p>
+							</div>
+							<div class="workflow__item swiper-slide">
+								<div class="wf__container">
+									<div>
+										<h4 class="workflow__title">Provide Details</h4>
+									</div>
+									<div class="wf__cont">
+										<div class="workflow__icon">
+											<img src="img/workflow/details.png" alt="Details">
+										</div>
+										<div class="workflow__info">
+											<p class="workflow__text">Share all necessary instructions and preferences for
+												achieving precise results. Specify the desired dimensions (height and width) of
+												the photo in inches or centimeters if you have particular sizing requirements. </p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="workflow__item swiper-slide">
+								<div class="wf__container">
+									<div>
+										<h4 class="workflow__title">Retouching</h4>
+									</div>
+									<div class="wf__cont">
+										<div class="workflow__icon">
+											<img src="img/workflow/retouch.png" alt="Retouch">
+										</div>
+										<div class="workflow__info">
+											<p class="workflow__text">Our team will enhance and clean up the images, aiming for a
+												natural and polished look while maintaining the authenticity of the original
+												portraits. If necessary, indicate wishes to change hairstyle, facial features,
+												clothing, add, or remove any item. Also, specify what needs to be done with the
+												background: leave the background as it is, remove it, or halo it.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="workflow__item swiper-slide">
+								<div class="wf__container">
+									<div>
+										<h4 class="workflow__title">Review & Approval</h4>
+									</div>
+									<div class="wf__cont">
+										<div class="workflow__icon">
+											<img src="img/workflow/review.png" alt="Review">
+										</div>
+										<div class="workflow__info">
+											<p class="workflow__text">You'll receive a soft proof of the retouched images for your
+												review. We welcome any feedback or requests for revisions to ensure the final result
+												meets your expectations.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="workflow__item swiper-slide">
+								<div class="wf__container">
+									<div>
+										<h4 class="workflow__title">Finalization</h4>
+									</div>
+									<div class="wf__cont">
+										<div class="workflow__icon">
+											<img src="img/workflow/final.png" alt="Final">
+										</div>
+										<div class="workflow__info">
+											<p class="workflow__text">Once you've approved the retouched images, we'll prepare the
+												final files for engraving or provide a watermarked image for new clients. If you're
+												a new user, you'll receive an unwatermarked image after completing payment.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="workflow__item swiper-slide">
+								<div class="wf__container">
+									<div>
+										<h4 class="workflow__title">Payment</h4>
+									</div>
+									<div class="wf__cont">
+										<div class="workflow__icon">
+											<img src="img/workflow/payment.png" alt="Payment">
+										</div>
+										<div class="workflow__info">
+											<p class="workflow__text">Complete payment for our services. We will provide payment
+												information in direct messages.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="workflow__item swiper-slide">
+								<div class="wf__container">
+									<div>
+										<h4 class="workflow__title">Feedback</h4>
+									</div>
+									<div class="wf__cont">
+										<div class="workflow__icon">
+											<img src="img/workflow/feedback.png" alt="feedback">
+										</div>
+										<div class="workflow__info">
+											<p class="workflow__text">Your feedback is invaluable to us as it helps us continually
+												improve our services. We encourage you to share your thoughts and suggestions to
+												enhance your experience with us and better meet your needs in the future.</p>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="swiper-pagination"></div>
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
+						<div class="workflow__bullets swiper-pagination"></div>
 					</div>
 				</div>
 			</section>
 			<hr />
 		</main>
+		<!--! FOOTER -->
 		<footer id="writeus" class="footer">
 			<div class="footer__body">
 				<div class="footer__container">
@@ -743,11 +897,13 @@
 								<h4 class="form__title">Write to us:</h4>
 								<div class="form__item">
 									<label for="formName" class="form__label">Name*:</label>
-									<input type="text" id="formName" name="name" class="form__input _req">
+									<input type="text" id="formName" name="name" class="form__input _req" required
+										placeholder="Enter your name">
 								</div>
 								<div class="form__item">
 									<label for="formEmail" class="form__label">Email*:</label>
-									<input type="text" id="formEmail" name="email" class="form__input _req _email">
+									<input type="text" id="formEmail" name="email" class="form__input _req _email" required
+										placeholder="example@gmail.com">
 								</div>
 								<div class="form__item">
 									<label for="formPhone" class="form__label">Phone Number:</label>
@@ -755,15 +911,16 @@
 								</div>
 								<div class="form__item">
 									<label for="formMessage" class="form__label">Message*:</label>
-									<textarea id="formMessage" name="message" rows="5" required></textarea>
+									<textarea id="formMessage" name="message" rows="5" class="text _req" required
+										placeholder="Provide requirments"></textarea>
 								</div>
 								<div class="form__item">
-									<div class="form__label">Attachments</div>
+									<div class="form__label">Attachments:</div>
 									<div class="file">
 										<div class="file__item">
 											<input id="formImage" accept=".jpg, .jpeg, .png, .psd, .webp, .bmp, .pdf" type="file"
 												name="image" class="file__input">
-											<div class="file__button">Choose</div>
+											<div class="file__button">Select</div>
 										</div>
 										<div id="formPreview" class="file__preview"></div>
 									</div>
@@ -776,14 +933,16 @@
 											personal data</label>
 									</div>
 								</div>
-								<button type="submit" class="form__button">Submit</button>
+								<button type="submit" class="form__button"
+									style="--clr:#1e9bff"><span>Submit</span><i></i></button>
 							</form>
 						</div>
 					</div>
 					<div class="footer__item">
 						<h4 class="footer__title">Social Media</h4>
 						<div class="footer__social social">
-							<a href="#" class="social__item" target="_blank" title="Facebook">
+							<a href="https://www.facebook.com/profile.php?id=61558034514661" class="social__item"
+								target="_blank" title="Facebook">
 								<img src="img/social/facebook.png" alt="facebook">
 							</a>
 							<a href="https://www.instagram.com/portraitretouchingstudio" class="social__item" target="_blank"
@@ -805,13 +964,15 @@
 								title="Youtube">
 								<img src="img/social/youtube.png" alt="youtube">
 							</a>
-							<a href="tg://resolve?domain=username" class="social__item" target="_blank" title="Telegram">
+							<a href="tg://resolve?domain=PortraitRetouchingStudio"
+								data-web="https://web.telegram.org/#/im?p=@PortraitRetouchingStudio" class="social__item"
+								target="_blank" title="Telegram">
 								<img src="img/social/telegram.png" alt="telegram">
 							</a>
-							<a href="viber://chat?number=0990421267" class="social__item" target="_blank" title="Viber">
+							<a href="viber://chat?number=+380684383020" class="social__item" target="_blank" title="Viber">
 								<img src="img/social/viber.png" alt="viber">
 							</a>
-							<a href="https://api.whatsapp.com/send?phone=номер_телефона" class="social__item" target="_blank"
+							<a href="https://api.whatsapp.com/send?phone=380684383020" class="social__item" target="_blank"
 								title="Whatsapp">
 								<img src="img/social/whatsapp.png" alt="whatsapp">
 							</a>
@@ -828,7 +989,7 @@
 			</div>
 			<div class="footer__copy">© 2015-2024 Portrait Retouching Studio. All rights reserved.</div>
 	</div>
-
+	<script src="js/script.js"></script>
 	<script src="js/stickytop.js"></script>
 	<script src="js/slider.js"></script>
 	<script src="js/burger.js"></script>
@@ -838,10 +999,3 @@
 </body>
 
 </html>
-
-<!-- 
-	<div class="header-block">
-						<div class="header-block__label">Services</div>
-						<h2 class="header-block__title">We offer different services</h2>						
-					</div>
--->
